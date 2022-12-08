@@ -18,8 +18,11 @@ class ProjectResource extends JsonResource
             'owner' => $this->owner,
             'candy_machine_id' => $this->candy_machine_id,
             'title' => $this->title,
-            'image_url' => $this->image_url,
             'description' => $this->description,
+            'url' => $this->url,
+            'discord_url' => $this->discord_url,
+            'twitter_url' => $this->twitter_url,
+            'image_url' => $this->image_url,
         ];
     }
 }

@@ -15,6 +15,8 @@ class Project extends Model
         'title',
         'description',
         'url',
+        'discord_url',
+        'twitter_url',
         'image_url',
     ];
 }

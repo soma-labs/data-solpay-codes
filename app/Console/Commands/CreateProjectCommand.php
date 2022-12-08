@@ -33,6 +33,8 @@ class CreateProjectCommand extends Command
         $title = $this->ask('Project title:');
         $description = $this->ask('Project description:');
         $project_url = $this->ask('Project URL:');
+        $discord_url = $this->ask('Discord URL:');
+        $twitter_url = $this->ask('Twitter URL:');
         $image_url = $this->ask('Project image URL:');
 
         Project::create(
@@ -42,6 +44,8 @@ class CreateProjectCommand extends Command
                 'title' => $title,
                 'description' => $description,
                 'url' => $project_url,
+                'discord_url' => $discord_url,
+                'twitter_url' => $twitter_url,
                 'image_url' => $image_url,
             ]
         );
